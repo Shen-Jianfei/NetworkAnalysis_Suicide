@@ -10,6 +10,6 @@ Coding in R 3.6.3
 
 Using packages:
 
-qgraph
+qgraph 1.6.5
 
-bootnet
+bootnet 1.3
