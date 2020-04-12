@@ -10,6 +10,12 @@ Coding in R 3.6.3
 
 Using packages:
 
+readxl 1.3.1
+
 qgraph 1.6.5
 
 bootnet 1.3
+
+ggplot2 3.2.1
+
+NetworkComparisonTest 2.2.1
