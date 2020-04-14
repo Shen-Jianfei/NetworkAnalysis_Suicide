@@ -20,6 +20,7 @@ CentrSuiBDI <- centrality(NetSuiBDI)
 CentrPlotSuiBDI <- centralityPlot(NetSuiBDI)
 CentrSuiBDIALL <- centralityPlot(NetSuiBDI, include = c("Strength", "Closeness", "Betweenness"))
 CentrSuiBDI$OutDegree
+order(CentrSuiBDI$OutDegree, decreasing = TRUE)
 
 #Network_Suicide_HAMD-------------------------------------------------------------------------------------------------
 NetSuiHAMD <- estimateNetwork(SuicideHAMD,  default = "EBICglasso", tuning = 0.5)
@@ -30,6 +31,7 @@ CentrSuiHAMD <- centrality(NetSuiHAMD)
 CentrPlotSuiHAMD <- centralityPlot(NetSuiHAMD)
 CentrSuiHAMDALL <- centralityPlot(NetSuiHAMD, include = c("Strength", "Closeness", "Betweenness"))
 CentrSuiHAMD$OutDegree
+order(CentrSuiHAMD$OutDegree, decreasing = TRUE)
 
 #Network_Nosuicide_BDI------------------------------------------------------------------------------------------------
 NetNosuiBDI <- estimateNetwork(NosuicideBDI,  default = "EBICglasso", tuning = 0.5)
@@ -40,6 +42,7 @@ CentrNosuiBDI <- centrality(NetNosuiBDI)
 CentrPlotNosuiBDI <- centralityPlot(NetNosuiBDI)
 CentrNosuiBDIALL <- centralityPlot(NetNosuiBDI, include = c("Strength", "Closeness", "Betweenness"))
 CentrNosuiBDI$OutDegree
+order(CentrNosuiBDI$OutDegree, decreasing = TRUE)
 
 #Network_Nosuicide_HAMD-----------------------------------------------------------------------------------------------
 NetNosuiHAMD <- estimateNetwork(NosuicideHAMD,  default = "EBICglasso", tuning = 0.5)
@@ -50,6 +53,7 @@ CentrNosuiHAMD <- centrality(NetNosuiHAMD)
 CentrPlotNosuiHAMD <- centralityPlot(NetNosuiHAMD)
 CentrNosuiHAMDALL <- centralityPlot(NetNosuiHAMD, include = c("Strength", "Closeness", "Betweenness"))
 CentrNosuiHAMD$OutDegree
+order(CentrNosuiHAMD$OutDegree, decreasing = TRUE)
 
 #Network_Comparison_Tests_BDI-----------------------------------------------------------------------------------------
 NCTBDI <- NCT(SuicideBDI, 
